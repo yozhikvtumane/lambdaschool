@@ -1,0 +1,84 @@
+@import url(https://necolas.github.io/normalize.css/6.0.0/normalize.css);
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	font-family: sans-serif;
+	font-size: 100%;
+}
+
+img {
+	max-width: 100%;
+}
+
+.clearfix:after {
+	content: " ";
+	display: table;
+	clear: both;
+	visibility: hidden;
+}
+
+header {
+	width: 100%;
+	background: red;
+	padding: 3em;
+}
+
+.wrapper {
+	display: block;
+	width: 100%;
+}
+
+section {
+	float: left;
+	width: 33.33333%;
+	padding: 100em 0;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.purple {
+	background-color: purple;
+}
+
+.blue {
+	background-color: blue;
+}
+
+footer {
+	width: 100%;
+	background: green;
+	padding: 3em;
+}
+
+
+#modalWindow {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background: #FFEC94;
+	width: 200px;
+	height: 75px;
+	border: 3px solid #333;
+	border-radius: 3px;
+	text-align: center;
+}
+
+
+@media (max-width: 900px) {
+	section {
+		float: none;
+		display: block;
+		width: 100%;
+		padding: 50em 0;
+	}
+}
