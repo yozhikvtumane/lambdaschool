@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mini Bootcamp First Homework</title>
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+	<header class="red"></header>
+	<div class="wrapper clearfix">
+		<nav class="sidebar-left"></nav>
+		<div class="content relative">
+			<footer></footer>
+		</div>
+		<nav class="sidebar-right"></nav>
+	</div>
+	<div id="modalWindow">
+		<p>Don't forget to change the size of the window!</p>
+		<p><button id="modalClose">Click here to close this window</button></p>
+	</div>
+	<script>
+		window.onload = function() {
+			var modalWindow = document.getElementById('modalWindow');
+			var closeButton  = document.getElementById('modalClose');
+			closeButton.addEventListener('click' , function() {
+				modalWindow.style.display = 'none';
+			});
+		}
+	</script>
+</body>
+</html>
